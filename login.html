@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script>
+    let userName = prompt('Enter user name');
+    
+    if (userName == 'Admin') {
+        let password = prompt('Enter password');
+
+        if (password == 'TheMaster') {
+            alert('Welcome');
+        } else if (!password) {
+            alert('Canceled');
+        } else {
+            alert('Wrong password');
+        }
+    } else if (!userName) {
+        alert('Canceled');
+    } else {
+        alert('I don\'t know you');
+    }
+</script>
